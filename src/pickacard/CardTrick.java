@@ -49,8 +49,19 @@ public static void main(String[] args)
         user.getSuit();
         // and search magicHand here
         
-        //Then report the result here
+        for(int i=0; i<magicHand.length; i++){
+            if(magicHand[i].getValue() == user.getValue() && magicHand[i].getSuit().equalsIgnoreCase(user.getSuit())){
+                
+                found =true;
+                break;
+            }
+         }
         
+        //Then report the result here
+        if(found)
+            System.out.println("USER'S CARD IS IN THE MAGIC HAND OF RANDOM CARDS");
+        else
+            System.out.println("USER'S CARD IS NOT IN THE MAGIC HAND OF RANDOM CARDS");
     }
     
 }
