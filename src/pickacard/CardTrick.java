@@ -1,6 +1,4 @@
 package pickacard;
-import java.util.Arrays;
-import java.util.Scanner;
 import java.util.Random; 
 /*
  * Name: EKNOOR
@@ -30,10 +28,11 @@ public static void main(String[] args)
             magicHand[i] = c;
         }
         
+        boolean found = false;
         //(hard-coded) Card Object called luckyCard 
-        Card luckycard = new Card(2);
-        luckycard.setValue(value);
-        luckycard.setSuit(Card.SUITS[4]);
+        Card luckyCard = new Card();
+        luckyCard.setValue(2);
+        luckyCard.setSuit(Card.SUITS[4]);
     
         // loop to determine and search if the luckycard is present in the magicHand 
         for(int i=0; i<magicHand.length; i++){
