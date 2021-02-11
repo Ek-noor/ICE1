@@ -1,4 +1,5 @@
 package pickacard;
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Random; 
 /*
@@ -31,6 +32,21 @@ public static void main(String[] args)
         
         //insert code to ask the user for Card value and suit, create their card
         
+        //Creating default card for the user
+        Card user = new Card();
+        int value;
+        String suit;
+        boolean found = false;
+        Scanner search = new Scanner(System.in);
+        
+        System.out.println("PLEASE ENTER THE VALUE OF CARD FROM 1 TO 13:  ");
+        value = search.nextInt();
+        System.out.println("PLEASE ENTER THE SUIT OF THE CARD" + Arrays.toString(Card.SUITS));
+        suit = search.next();
+        
+        //setting the value and the suit for the user card
+        user.setValue(value);
+        user.getSuit();
         // and search magicHand here
         
         //Then report the result here
