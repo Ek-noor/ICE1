@@ -14,7 +14,7 @@ package pickacard;
  */
 public class Card {
 
-    private String suit;                //clubs, spades, diamonds, hearts
+    private String suit;                // Suit includes clubs, spades, diamonds, hearts
    private int value;                   //1-13
 
    public static final String [] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"};
@@ -44,7 +44,8 @@ public class Card {
      */
     public void setValue(int value) {
         this.value = value;
-    }
+        
+    }           //End of the Card.java class
    
    
     
